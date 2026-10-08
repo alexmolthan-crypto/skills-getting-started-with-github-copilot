@@ -60,9 +60,11 @@ section h3 {
 .activity-card {
   margin-bottom: 15px;
   padding: 15px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #f9f9f9;
+  border: 1px solid #e0e4f2;
+  border-left: 4px solid #3949ab;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #fff 0%, #f7f8ff 100%);
+  box-shadow: 0 3px 10px rgba(26, 35, 126, 0.06);
 }
 
 .activity-card h4 {
@@ -72,6 +74,100 @@ section h3 {
 
 .activity-card p {
   margin-bottom: 8px;
+}
+
+.participants-section {
+  margin-top: 14px;
+  padding: 12px 14px;
+  border: 1px solid #e2e7f5;
+  border-radius: 7px;
+  background-color: #f1f3fb;
+}
+
+.participants-heading {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.participants-heading h5 {
+  color: #1a237e;
+  font-size: 14px;
+}
+
+.participants-count {
+  display: inline-flex;
+  min-width: 24px;
+  height: 24px;
+  align-items: center;
+  justify-content: center;
+  padding: 0 7px;
+  border-radius: 12px;
+  background-color: #1a237e;
+  color: white;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.participant-list {
+  padding: 0;
+  color: #424b69;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  list-style: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 4px;
+  padding: 5px 7px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.participant-list .no-participants {
+  color: #737b91;
+  font-style: italic;
+  padding: 3px 0;
+}
+
+.participant-remove-button {
+  display: inline-flex;
+  flex: 0 0 auto;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 6px;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  background-color: transparent;
+  color: #8b3541;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+.participant-remove-button svg {
+  width: 16px;
+  height: 16px;
+  fill: currentColor;
+}
+
+.participant-remove-button:hover,
+.participant-remove-button:focus-visible {
+  border-color: #f0c4ca;
+  background-color: #fff0f1;
+  color: #b42332;
+}
+
+.participant-remove-button:focus-visible {
+  outline: 2px solid #3949ab;
+  outline-offset: 2px;
 }
 
 .form-group {
